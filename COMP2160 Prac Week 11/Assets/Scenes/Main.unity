@@ -160,6 +160,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.09
       objectReference: {fileID: 0}
+    - target: {fileID: 5450362575394769019, guid: b96044efa2ae54750ad24e39e1352865,
+        type: 3}
+      propertyPath: crosshairPositionOffset.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7485987256551808895, guid: b96044efa2ae54750ad24e39e1352865,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -230,6 +235,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b96044efa2ae54750ad24e39e1352865, type: 3}
+--- !u!1001 &395571016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 793117825676128767, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333184838310477938, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: m_Name
+      value: CameraFollowObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141292031517227722, guid: a861b7054a367bb4287bb05b6b8da7d9,
+        type: 3}
+      propertyPath: followTarget
+      value: 
+      objectReference: {fileID: 923977101}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a861b7054a367bb4287bb05b6b8da7d9, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +543,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a592d885d76b4a89afcc829b8d5f560, type: 3}
+--- !u!4 &923977101 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7840369716606208530, guid: 1a592d885d76b4a89afcc829b8d5f560,
+    type: 3}
+  m_PrefabInstance: {fileID: 923977100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1183061768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -566,9 +650,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  field of view: 115.9
+  orthographic: 1
+  orthographic size: 15.47
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -680,3 +764,4 @@ SceneRoots:
   - {fileID: 1183061768}
   - {fileID: 923977100}
   - {fileID: 331283}
+  - {fileID: 395571016}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8399291161501472776}
   - component: {fileID: 5450362575394769019}
+  - component: {fileID: 6118289103223649240}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -48,6 +49,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crosshair: {fileID: 7485987256551808895}
   target: {fileID: 2155366059082070411}
+  maxDistanceFromCamera: 10
+  crosshairPositionOffset: {x: 0, y: 0.1, z: 0}
+--- !u!114 &6118289103223649240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929496763161468025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac44dca60757c1244be121a96bb4eadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minOrthoSize: 1
+  maxOrthoSize: 15
+  minPerspFov: 10
+  maxPerspFov: 120
+  cameraZoomMultiplier: -0.0008333334
 --- !u!1 &3945490509769068079
 GameObject:
   m_ObjectHideFlags: 0
